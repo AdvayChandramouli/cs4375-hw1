@@ -1,6 +1,6 @@
 # Yelp Sentiment Analysis (FFNN & RNN)
 
-This project implements Feedforward and Recurrent Neural Networks for 5-class sentiment analysis on Yelp reviews. The ``forward()`` function in both ``ffnn.py`` and ``rnn.py`` is completed under the ``[to fill]`` sections.
+This project implements Feedforward and Recurrent Neural Networks for 5-class sentiment analysis on Yelp reviews.
 
 ---
 
