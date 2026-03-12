@@ -1,0 +1,16 @@
+# Large data files
+Data_Embedding.zip
+data/
+*.pkl
+CS4375_Assignment_sp26.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env/
+
+# Mac files
+.DS_Store

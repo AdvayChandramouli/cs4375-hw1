@@ -1,0 +1,13 @@
+# CS4375 HW1 - Yelp Sentiment Analysis (FFNN & RNN)
+# Python 3.8 recommended; conda create -n cs4375 python=3.8
+
+# PyTorch (1.10.1 benchmarked for this assignment)
+# For CPU-only: pip install torch==1.10.1
+# For CUDA, see: https://pytorch.org/get-started/previous-versions/
+torch>=1.10.1
+
+# Numerical computing
+numpy>=1.21.0,<2.0.0
+
+# Progress bars
+tqdm>=4.60.0
