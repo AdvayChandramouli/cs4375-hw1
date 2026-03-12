@@ -1,21 +1,28 @@
-# starter code
+# Yelp Sentiment Analysis (FFNN & RNN)
 
-Add the corresponding (one) line under the ``[to fill]`` in ``def forward()`` of the class for ffnn.py and rnn.py
-
-Feel free to modify other part of code, they are just for your reference.
+This project implements Feedforward and Recurrent Neural Networks for 5-class sentiment analysis on Yelp reviews. The ``forward()`` function in both ``ffnn.py`` and ``rnn.py`` is completed under the ``[to fill]`` sections.
 
 ---
 
-One example on running the code:
+## FFNN
+
+Bag-of-words input → hidden layer (ReLU) → output layer → LogSoftmax. Uses SGD optimizer and fixed epochs.
+
+## RNN
+
+Sequence of word embeddings → RNN (tanh) → linear output per token → sum over sequence → LogSoftmax. Uses Adam optimizer, pretrained embeddings from ``word_embedding.pkl``, and early stopping with max-epoch cap.
+
+---
+
+## Running the code
 
 **FFNN**
 
-``python ffnn.py --hidden_dim 10 --epochs 1 ``
-``--train_data ./training.json --val_data ./validation.json``
-
+``python ffnn.py -hd 64 -e 10 --train_data training.json --val_data validation.json``
 
 **RNN**
 
-``python rnn.py --hidden_dim 32 --epochs 10 ``
-``--train_data training.json --val_data validation.json``
+``python rnn.py -hd 64 -e 50 --train_data training.json --val_data validation.json``
+
+(Ensure ``word_embedding.pkl`` is in the project root or adjust the path in rnn.py.)
 
